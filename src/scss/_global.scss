@@ -1,0 +1,29 @@
+@use '_variables' as *;
+
+@mixin fontSize($size, $lineHeight, $weight: 400) {
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  @include fontSize(0.875rem, 1.25rem);
+  border: none;
+  background-color: $color-500;
+  text-transform: uppercase;
+  width: 250px;
+  border-radius: 16px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-800;
+  }
+}
+
+.title {
+  @include fontSize(2.25rem, 2.5rem, 600);
+    font-family: $font-secondary;
+    font-style: italic;
+    color: $color-500;
+}

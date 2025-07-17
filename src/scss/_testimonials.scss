@@ -1,0 +1,50 @@
+@use '_variables' as *;
+@use '_global' as *;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.testimonials__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    @include fontSize(1rem, 1.5rem);
+  }
+}
+
+.testimonials__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  q {
+    max-width: 40ch;
+    @include fontSize(1rem, 1.5rem);
+    font-style: italic;
+  }
+}
+
+.testimonials__item--client {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  span {
+    @include fontSize(0.875rem, 1.25rem, 600);
+  }
+}

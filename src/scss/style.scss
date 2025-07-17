@@ -1,0 +1,25 @@
+@use "_variables" as *;
+@use 'header';
+@use 'global';
+@use 'home';
+@use 'about';
+@use 'testimonials';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-100;
+  font-family: $font-primary;
+  color: $color-400;
+}
+
+main {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

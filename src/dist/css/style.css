@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.btn {
+  padding: 1rem 2rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  border: none;
+  background-color: #eb5e28;
+  text-transform: uppercase;
+  width: 250px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ef7d48;
+}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  font-style: italic;
+  color: #eb5e28;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5rem;
+  border: 1px solid #ccc5b9;
+}
+
+.header__links ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.header__links ul li a {
+  text-decoration: none;
+  color: #252422;
+}
+.header__links ul li a:hover {
+  color: #8d8883;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img {
+  width: 60px;
+  height: 45px;
+}
+.logo h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: "Fraunces", serif;
+  color: #252422;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.socialIcons a {
+  height: 30px;
+  padding: 0.5rem;
+}
+.socialIcons a img {
+  width: 24px;
+  height: 24px;
+}
+.socialIcons a:hover:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #8d8883;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.home__text p {
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.home__image img {
+  width: 600px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  background-image: url("/src/assets/img/background-figma-serralheria.png");
+  background-size: contain;
+}
+
+.about__image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about__text p {
+  max-width: 60ch;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.about__text p:first-child {
+  font-weight: 600 !important;
+}
+
+.about__text--ceo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.about__text--ceo span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.testimonials__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonials__text p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.testimonials__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.testimonials__item q {
+  max-width: 40ch;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.testimonials__item--client {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.testimonials__item--client span {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffcf2;
+  font-family: "Public Sans", sans-serif;
+  color: #252422;
+}
+
+main {
+  padding: 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

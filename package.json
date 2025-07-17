@@ -1,0 +1,16 @@
+{
+  "name": "serralheria-demo",
+  "version": "1.0.0",
+  "description": "Site instrucional de serralheria",
+  "main": "/src/js/index.js",
+  "scripts": {
+    "sass": "sass src/scss/style.scss  src/dist/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "Jessica Aguiar",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

@@ -1,0 +1,43 @@
+@use '_variables' as *;
+@use '_global' as *;
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  background-image: url('/src/assets/img/background-figma-serralheria.png');
+  background-size: contain;
+}
+
+.about__image {
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    max-width: 60ch;
+    @include fontSize(1rem, 1.5rem);
+  }
+}
+
+.about__text p:first-child {
+  font-weight: 600 !important;
+}
+
+.about__text--ceo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  span {
+    @include fontSize(0.875rem, 1.25rem, 700);
+  }
+}

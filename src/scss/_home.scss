@@ -1,0 +1,28 @@
+@use '_variables' as *;
+@use '_global' as *;
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    max-width: 60ch;
+    @include fontSize(1rem, 1.5rem);
+  }
+}
+
+.home__image {
+  img {
+    width: 600px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+}

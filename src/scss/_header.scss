@@ -1,0 +1,70 @@
+@use "_variables" as *;
+@use '_global' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5rem;
+  border: 1px solid $color-200;
+}
+
+.header__links {
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $color-400;
+
+        &:hover {
+          color: $color-600;
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 60px;
+    height: 45px;
+  }
+
+  h1 {
+    @include fontSize(1.5rem, 2rem);
+    font-family: $font-secondary;
+    color: $color-400;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  a {
+    height: 30px;
+    padding: 0.5rem;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-600;
+    }
+  }
+}
