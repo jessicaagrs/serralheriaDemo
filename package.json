@@ -4,13 +4,16 @@
   "description": "Site instrucional de serralheria",
   "main": "/src/js/index.js",
   "scripts": {
-    "sass": "sass src/scss/style.scss  src/dist/css/style.css --watch"
+    "sass": "sass src/scss/style.scss  src/dist/css/style.css --watch",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "keywords": [],
   "author": "Jessica Aguiar",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "prettier": "3.6.2",
     "sass": "^1.89.2"
   }
 }

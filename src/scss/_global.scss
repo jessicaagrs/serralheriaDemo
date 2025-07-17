@@ -23,7 +23,24 @@
 
 .title {
   @include fontSize(2.25rem, 2.5rem, 600);
-    font-family: $font-secondary;
-    font-style: italic;
-    color: $color-500;
+  font-family: $font-secondary;
+  font-style: italic;
+  color: $color-500;
+}
+
+.bordered {
+  position: relative;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid $color-200;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 250px;
+    background-color: $color-500;
+  }
 }

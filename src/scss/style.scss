@@ -1,14 +1,17 @@
-@use "_variables" as *;
+@use '_variables' as *;
 @use 'header';
 @use 'global';
 @use 'home';
 @use 'about';
 @use 'testimonials';
+@use 'clients';
+@use 'services';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {
