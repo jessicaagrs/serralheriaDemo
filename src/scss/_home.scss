@@ -20,6 +20,12 @@
     }
     @include fontSize(1rem, 1.5rem);
   }
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: $color-400;
+  }
 }
 
 .home__image {

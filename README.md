@@ -19,7 +19,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -109,7 +108,6 @@ _Confira como rodar o projeto localmente:_
 ## Ver demonstração
 
 Você pode ver o projeto rodando em produção no seguinte link: [Serralheria Demo](https://serralheria-demo.vercel.app/)
-
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 

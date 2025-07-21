@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 .btn {
   padding: 0.8rem 1rem;
   font-size: 0.75rem;
@@ -28,7 +28,7 @@
   font-size: 1.75rem;
   line-height: 2rem;
   font-weight: 600;
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   font-style: italic;
   color: #eb5e28;
 }
@@ -46,7 +46,7 @@
   border-bottom: 1px solid #ccc5b9;
 }
 .bordered::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -96,7 +96,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
-  font-family: "Fraunces", serif;
+  font-family: 'Fraunces', serif;
   color: #252422;
 }
 
@@ -114,7 +114,7 @@
   height: 24px;
 }
 .socialIcons a:hover:after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 2px;
@@ -144,6 +144,11 @@
     max-width: 110ch;
   }
 }
+.home__text a {
+  text-align: center;
+  text-decoration: none;
+  color: #252422;
+}
 
 .home__image {
   display: none;
@@ -163,7 +168,7 @@
   display: flex;
   align-items: center;
   gap: 8rem;
-  background-image: url("/src/assets/img/background-figma-serralheria.png");
+  background-image: url('/src/assets/img/background-figma-serralheria.png');
   background-size: contain;
 }
 
@@ -435,7 +440,7 @@
   text-decoration: none;
 }
 .footer__budget a:hover {
-  background-color: #3f0f0b;
+  background-color: #726d68;
 }
 
 .footer__contact {
@@ -592,7 +597,7 @@
 
 body {
   background-color: #fffcf2;
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   color: #252422;
 }
 
