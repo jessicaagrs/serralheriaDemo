@@ -5,15 +5,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0.8rem 5rem;
   border: 1px solid $color-200;
 }
 
 .header__links {
   ul {
-    display: flex;
+    display: none;
     list-style: none;
     gap: 2rem;
+    @include mobileLg {
+      display: flex;
+    }
 
     li {
       a {

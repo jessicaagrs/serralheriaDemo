@@ -1,6 +1,6 @@
 @use '_variables' as *;
 @use 'header';
-@use 'global';
+@use 'global' as *;
 @use 'home';
 @use 'about';
 @use 'testimonials';
@@ -23,10 +23,14 @@ body {
 }
 
 main {
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+
+  @include mobileSm {
+    padding: 3rem 3rem;
+  }
 }
 
 #arrow-up {
@@ -36,11 +40,16 @@ main {
 .arrow-up {
   position: fixed;
   bottom: 1%;
-  left: 95%;
+  left: 88%;
   transform: translateX(-50%);
   z-index: 10;
   background-color: $color-400;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
+  @include mobileSm {
+    left: 95%;
+    width: 80px;
+    height: 80px;
+  }
 }

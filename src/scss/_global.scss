@@ -11,15 +11,38 @@
   scroll-behavior: smooth;
 }
 
+@mixin mobileLg {
+  @media (width >= 64rem) {
+    @content;
+  }
+}
+
+@mixin mobileSm {
+  @media (width >= 40rem) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (width >= 96rem) {
+    @content;
+  }
+}
+
 .btn {
-  padding: 1rem 2rem;
-  @include fontSize(0.875rem, 1.25rem);
+  padding: 0.8rem 1rem;
+  @include fontSize(0.75rem, 1rem);
   border: none;
   background-color: $color-500;
   text-transform: uppercase;
-  width: 250px;
+  width: 200px;
   border-radius: 16px;
   cursor: pointer;
+  @include mobileSm {
+    width: 250px;
+    padding: 1rem 2rem;
+    @include fontSize(0.875rem, 1.25rem);
+  }
 
   &:hover {
     background-color: $color-800;
@@ -27,10 +50,13 @@
 }
 
 .title {
-  @include fontSize(2.25rem, 2.5rem, 600);
+  @include fontSize(1.75rem, 2rem, 600);
   font-family: $font-secondary;
   font-style: italic;
   color: $color-500;
+  @include mobileSm {
+    @include fontSize(2.25rem, 2.5rem, 600);
+  }
 }
 
 .bordered {

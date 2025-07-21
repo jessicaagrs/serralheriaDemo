@@ -11,8 +11,10 @@
 .testimonials__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  @include mobileSm {
+    align-items: center;
+  }
 
   p {
     @include fontSize(1rem, 1.5rem);

@@ -10,6 +10,11 @@
 }
 
 .about__image {
+  display: none;
+  @include mobileLg {
+    display: block;
+  }
+
   img {
     max-width: 100%;
     height: auto;
@@ -24,6 +29,9 @@
 
   p {
     max-width: 60ch;
+    @include desktop {
+      max-width: 110ch;
+    }
     @include fontSize(1rem, 1.5rem);
   }
 }

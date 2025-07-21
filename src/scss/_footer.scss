@@ -18,11 +18,16 @@
   justify-content: center;
   align-items: center;
   background-color: $color-500;
-  width: 33.33%;
+  width: max-content;
+  padding: 0 0.5rem;
   height: 200px;
   border-radius: 12px;
   position: absolute;
   top: -100px;
+  @include mobileSm {
+    width: 33.33%;
+    padding: 0;
+  }
 
   a {
     background-color: $color-600;
@@ -37,9 +42,18 @@
 
 .footer__contact {
   padding-top: 180px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8rem;
+  @include mobileSm {
+    justify-content: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .footer__contact--text {
@@ -56,11 +70,21 @@
   }
 }
 
+.footer__contact--map {
+  iframe {
+    max-width: 100%;
+  }
+}
+
 .footer__copyright {
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 1rem;
   padding-bottom: 1rem;
+  @include mobileSm {
+    text-align: left;
+  }
 
   p {
     @include fontSize(0.875rem, 1.25rem);
