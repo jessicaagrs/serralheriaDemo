@@ -127,6 +127,6 @@ Linkedin: [Jessica Aguiar](https://www.linkedin.com/in/jessicaag-rs/)
 
 Codepen: [jessicaagrs](https://codepen.io/jessicaagrs/pens/public)
 
-Email: [jessica.aguiar@example.com](mailto:jessicaag.rs@gmail.com)
+Email: [Gmail](mailto:jessicaag.rs@gmail.com)
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
