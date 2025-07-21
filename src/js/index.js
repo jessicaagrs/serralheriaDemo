@@ -36,6 +36,30 @@ if (carrousel) {
   });
 }
 
+const iconMenu = document.getElementById('menu-icon');
+const closeButtonMenu = document.getElementById('button-close');
+const linksMenu = document.querySelectorAll('#links-mobile');
+const iconsMenu = document.querySelectorAll('#social-icons-mobile');
+const menuMobileContent = document.querySelector(
+  '.header__links--mobile__content'
+);
+iconMenu?.addEventListener('click', () => {
+  menuMobileContent?.classList.toggle('active');
+});
+closeButtonMenu?.addEventListener('click', () => {
+  menuMobileContent?.classList.remove('active');
+});
+linksMenu?.forEach((link) => {
+  link.addEventListener('click', () => {
+    menuMobileContent?.classList.remove('active');
+  });
+});
+iconsMenu?.forEach((element) => {
+  element.addEventListener('click', () => {
+    menuMobileContent?.classList.remove('active');
+  });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const buttonBackToTop = document.querySelector('#arrow-up');
   const header = document.querySelector('#home');

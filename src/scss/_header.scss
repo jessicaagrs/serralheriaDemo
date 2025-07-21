@@ -5,12 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 0.8rem 5rem;
+  padding: 0.8rem 1rem;
   border: 1px solid $color-200;
+  @include mobileLg {
+    padding: 0.8rem 5rem;
+  }
 }
 
 .header__links {
+  display: flex;
+  align-items: center;
+
   ul {
     display: none;
     list-style: none;
@@ -32,6 +37,19 @@
   }
 }
 
+.header__links--mobile {
+  display: block;
+  @include mobileLg {
+    display: none;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -43,16 +61,22 @@
   }
 
   h1 {
-    @include fontSize(1.5rem, 2rem);
+    @include fontSize(1.2rem, 1.5rem);
     font-family: $font-secondary;
     color: $color-400;
+    @include mobileLg {
+      @include fontSize(1.5rem, 2rem);
+    }
   }
 }
 
 .socialIcons {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
+  @include mobileLg {
+    display: flex;
+  }
 
   a {
     height: 30px;
@@ -72,3 +96,80 @@
     }
   }
 }
+
+// mobile start
+
+.header__links--mobile__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 90%;
+  background-color: $color-100;
+  z-index: 10;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    @include fontSize(1.5rem, 2rem);
+    color: $color-400;
+  }
+}
+
+#links-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  li {
+    a {
+      text-decoration: none;
+      color: $color-400;
+
+      &:hover {
+        color: $color-600;
+      }
+    }
+  }
+}
+
+#button-close {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#social-icons-mobile {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  a {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-600;
+    }
+  }
+}
+
+.active {
+  display: block;
+}
+
+// mobile end
