@@ -6,6 +6,8 @@
 @use 'testimonials';
 @use 'clients';
 @use 'services';
+@use 'footer';
+@use 'animations';
 
 * {
   margin: 0;
@@ -25,4 +27,20 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+#arrow-up {
+  display: none;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 1%;
+  left: 95%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: $color-400;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }

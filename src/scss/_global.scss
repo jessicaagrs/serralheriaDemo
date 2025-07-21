@@ -6,6 +6,11 @@
   font-weight: $weight;
 }
 
+@mixin scrollSmooth() {
+  scroll-margin-top: 5rem;
+  scroll-behavior: smooth;
+}
+
 .btn {
   padding: 1rem 2rem;
   @include fontSize(0.875rem, 1.25rem);

@@ -12,7 +12,7 @@
     <title>Serralheria [Demo]</title>
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <nav class="header__links">
         <ul>
           <li><a href="#about">Sobre</a></li>
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-      <section id="home" class="home">
+      <section class="home">
         <div class="home__text">
           <h2 class="title">
             Segurança, durabilidade e <br />
@@ -74,7 +74,7 @@
           />
         </div>
         <div class="about__text">
-          <h2 class="title">Sobre</h2>
+          <h2 class="title" id="title-about">Sobre</h2>
           <p>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
@@ -300,6 +300,74 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__budget">
+        <a
+          class="btn"
+          href="https://wa.me/5551999999999"
+          target="_blank"
+          id="budget-button"
+          >Solicite um orçamento</a
+        >
+      </div>
+
+      <div class="footer__contact">
+        <div class="footer__contact--text">
+          <h4>Contate-nos</h4>
+          <div>
+            <p>
+              Telefone: 55 51 9999-9999 <br />
+              Email: email@email.com
+            </p>
+          </div>
+          <div>
+            <p>
+              Rua dos coqueiros, 1999 Porto Alegre, RS/BR. <br />
+              CEP 9999-999
+            </p>
+          </div>
+          <div>
+            <p>
+              Horário: <br />
+              Segunda a sexta-feira <br />
+              08hs às 12hs e 13h30 às 18hs
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__contact--map">
+          <iframe
+            title="Mapa de localização"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.569006953662!2d-51.460362023716264!3d-29.674278614211183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951bfb3c0f5628b3%3A0x6ec8ac532e928cba!2sR.%20Copacabana%20-%20Centen%C3%A1rio%2C%20Montenegro%20-%20RS%2C%2092510-690!5e0!3m2!1spt-BR!2sbr!4v1752783952762!5m2!1spt-BR!2sbr"
+            width="600"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p>
+          © 2025 desenvolvido por
+          <a href="https://github.com/jessicaagrs" target="_blank"
+            >Jessica Aguiar</a
+          >
+          Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+
+    <a href="#home" id="arrow-up">
+      <img
+        src="/src/assets/img/arrow-up.svg"
+        alt="volta ao topo"
+        class="arrow-up"
+      />
+    </a>
 
     <script type="module" src="/src/js/index.js"></script>
   </body>
