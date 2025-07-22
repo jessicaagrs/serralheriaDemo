@@ -56,7 +56,7 @@
 
 ![Preview do projeto](https://iili.io/FN1kSxR.md.png)
 
-Esse projeto é um exemplo de site institucional para uma serralheria. O objeto é demonstrar boas práticas de desenvolvimento web, incluindo responsividade, uso de SCSS e integração com JavaScript.
+Esse projeto é um exemplo de site institucional one page para uma serralheria. O objeto é demonstrar boas práticas de desenvolvimento web, incluindo responsividade, uso de SCSS e integração com JavaScript.
 
 <p align="right">(<a href="#readme-top">Voltar ao topo</a>)</p>
 
