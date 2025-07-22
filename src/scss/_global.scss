@@ -6,11 +6,6 @@
   font-weight: $weight;
 }
 
-@mixin scrollSmooth() {
-  scroll-margin-top: 5rem;
-  scroll-behavior: smooth;
-}
-
 @mixin mobileLg {
   @media (width >= 64rem) {
     @content;

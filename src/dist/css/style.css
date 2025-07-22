@@ -436,7 +436,6 @@
 .services__cards {
   display: flex;
   gap: 2rem;
-  scroll-behavior: smooth;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
@@ -693,6 +692,8 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  scroll-margin-top: 5rem;
+  scroll-behavior: smooth;
 }
 
 body {

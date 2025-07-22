@@ -11,7 +11,6 @@
 .services__cards {
   display: flex;
   gap: 2rem;
-  scroll-behavior: smooth;
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
