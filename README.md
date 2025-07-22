@@ -29,7 +29,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Sumário</summary>
   <ol>
     <li>
       <a href="#sobre-o-projeto">Sobre o projeto</a>
