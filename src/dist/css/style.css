@@ -239,11 +239,6 @@
   line-height: 1.5rem;
   font-weight: 400;
 }
-@media (width >= 96rem) {
-  .home__text p {
-    max-width: 110ch;
-  }
-}
 .home__text a {
   text-align: center;
   text-decoration: none;
@@ -296,11 +291,6 @@
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-}
-@media (width >= 96rem) {
-  .about__text p {
-    max-width: 110ch;
-  }
 }
 
 .about__text p:first-child {
@@ -707,10 +697,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  max-width: none;
+  margin: 0;
+  overflow-x: hidden;
 }
 @media (width >= 40rem) {
   main {
     padding: 3rem 3rem;
+  }
+}
+@media (width >= 96rem) {
+  main {
+    max-width: 1536px;
+    margin: 0 auto;
   }
 }
 
