@@ -263,7 +263,7 @@
   display: flex;
   align-items: center;
   gap: 8rem;
-  background-image: url("/src/assets/img/background-figma-serralheria.webp");
+  background-image: url("/src/assets/img/background-figma-serralheria.png");
   background-size: contain;
 }
 

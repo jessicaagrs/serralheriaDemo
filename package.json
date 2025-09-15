@@ -6,7 +6,11 @@
   "scripts": {
     "sass": "sass src/scss/style.scss  src/dist/css/style.css --watch",
     "prettier": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "minify:js": "minify src/js/index.js > src/dist/index.min.js",
+    "minify:css": "minify src/dist/css/style.css > src/dist/style.min.css",
+    "minify:html": "minify index.html > src/dist/index.html",
+    "minify:all": "npm run minify:js && npm run minify:css && npm run minify:html"
   },
   "keywords": [],
   "author": "Jessica Aguiar",
