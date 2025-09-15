@@ -32,22 +32,29 @@
 .services__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   background-color: $color-900;
   padding: 1rem;
   border-radius: 12px;
   scroll-snap-align: start;
-  justify-content: center;
-
-  h3 {
-    @include fontSize(1.5rem, 2rem, 600);
-    color: $color-500;
-  }
 
   p {
     text-align: center;
     @include fontSize(1rem, 1.5rem);
+  }
+}
+
+.services__item--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  h3 {
+    @include fontSize(1.5rem, 2rem, 600);
+    color: $color-500;
   }
 }
 
