@@ -23,7 +23,7 @@
 <br />
 <div align="center">
 
-  <h3 align="center">Serralheria [Demo]</h3>
+  <h3 align="center">Serralheria Institucional One Page [Demo]</h3>
   
 </div>
 
@@ -79,9 +79,7 @@ Configuração inicial do projeto para que você possa rodar o código localment
 
 ### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- node
+- node v18
 - sass
   ```sh
   npm install -g sass
